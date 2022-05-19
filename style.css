@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&display=swap');
+
+html {
+    font-size: 75%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main {
+    max-width: 1800px;
+}
+
+.padding-row {
+    padding: 100px 80px;
+}
+
+.about-heading,
+.contact-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.about-para,
+.contact-para {
+    font-size: 1.4rem;
+    color: #999999;
+}
+
+.house-image {
+    background-image: url("./images/house.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 32rem;
+}
+
+.social-icons {
+    font-size: 5rem;
+    color: #F62E36;
+}
+
+.social-links {
+    text-decoration: none;
+}
+
+.social-links:not(:first-child) {
+    margin-left: 1.2rem;
+}
+
+.social-icons:hover {
+    transform: rotatez(360deg);
+    text-shadow: 0px 4px 10px rgba(246, 46, 54, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.input-fields {
+    background-color: #F2F2F2 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    font-size: 1.6rem !important;
+}
+
+::placeholder {
+    color: #999999 !important;
+}
+
+.input-fields:focus {
+    box-shadow: none !important;
+}
+
+.submit-btn {
+    font-size: 1.8rem;
+    background-color: #F62E36;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 2.5rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(246, 46, 54, 0.6);
+    transition: all 0.1s ease-in-out;
+}
+
+.submit-btn:active {
+    transform: translateY(0px);
+    box-shadow: 0px 4px 4px rgba(246, 46, 54, 0.6);
+    transition: all 0.1s ease-in-out;
+}
+
+@media (min-width:1800px) {
+    .padding-row {
+        padding: 150px 200px;
+    }
+}
+
+@media (min-width:1441px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (max-width:1124px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width:768px) {
+    .house-image {
+        background-size: contain;
+    }
+
+    .padding-row {
+        padding: 60px 50px;
+    }
+}
+
+@media (max-width:425px) {
+    html {
+        font-size: 50%;
+    }
+
+    .padding-row {
+        padding: 50px 30px;
+    }
+}
